@@ -1,0 +1,138 @@
+<resources>
+    <string name="app_name">SMS-сервер</string>
+
+    <string name="menu_exit">Выход</string>
+    <string name="menu_black_list">Черный список</string>
+    <string name="menu_download_item">Загрузки</string>
+    <string name="menu_settings">Настройки</string>
+    <string name="menu_start_btn">Запуск сервера</string>
+
+    <string name="configs_ok_ru">Конфигурация сервера получена!</string>
+    <string name="configs_null_ru">Конфигурация сервера обнулена!</string>
+    <string name="btn_start_ru">Старт</string>
+    <string name="btn_stop_ru">Стоп</string>
+
+    <string name="switchon_wifi">Локальный IP-адрес не присвоен! Включите Wi-Fi!</string>
+
+    <string name="server_greeting">SMS сервер - программа, которая
+        позволяет рассылать SMS сообщения через различные клиентские ПК. Для скачивания программы на ПК, вам необходимо
+         перейти в меню и нажать на пункт Загрузки.\nПеред использованием приложения ознакомьтесь с
+        Политикой конфиденциальности: https://yadi.sk/i/3CviR65FWhTwtw \n</string>
+
+    <string name="policy"><a href="https://yadi.sk/i/3CviR65FWhTwtw">Политикой Конфиденциальности.</a></string>
+
+    <string name="INFO_MSG_RU">Не соблюдается протокол!</string>
+
+    <string name="tab_title1">SMS-сервер</string>
+    <string name="tab_title2">Черный список</string>
+    <string name="tab_title3">Настройки</string>
+
+    <string name="security_pref_title">Параметры безопасности</string>
+    <string name="edit_pref_login_title">Имя пользователя</string>
+    <string name="edit_pref_login_summ">Логин для входа на сервер</string>
+    <string name="checkbox_pref_encrypt_title">Включить шифрование</string>
+
+    <string name="checkbox_pref_test_sms_title">Тестирование (для разработчиков)</string>
+    <string name="checkbox_pref_test_sms_summ_on">В этом режиме SMS отправляться не будут. Режим отладки включен!</string>
+    <string name="checkbox_pref_test_sms_summ_off">Отправка SMS включена. Режим отладки выключен!</string>
+
+    <string name="edit_pref_pass_title">Пароль</string>
+    <string name="edit_pref_pass_summ">Пароль для входа на сервер</string>
+
+    <string name="edit_pref_wrong_cnt_title">Число неудачных попыток входа</string>
+    <string name="edit_pref_wrong_cnt_summ">Счетчик числа неудачных попыток авторизации на сервере, по
+    истечению которого IP-адрес будет заблокирован</string>
+
+    <string name="edit_pref_blocktime_title">Время блокировки, мин</string>
+    <string name="edit_pref_blocktime_summ">Время, на которое будет заблокирован IP-адрес после
+        неудачных попыток авторизации</string>
+
+    <string name="common_pref_title">Общие настройки сервера</string>
+    <string name="edit_pref_listen_port_title">Номер порта</string>
+    <string name="edit_pref_listen_port_summ">Номер порта, на который будут приходить запросы на
+    отправку SMS</string>
+    <string name="edit_pref_num_sms_title">Число SMS в сутки</string>
+    <string name="edit_pref_num_sms_summ">Количество SMS сообщений, которые можно отправить через
+    данный сервер за 24 часа. (0 - без ограничений)</string>
+    <string name="setting_activity_title">Настроки сервера</string>
+
+
+    <string name="dialog_yes">Да</string>
+    <string name="dialog_no">Нет</string>
+    <string name="dialog_confirm_exit">Вы действиетельно хотите покинуть приложение?</string>
+    <string name="dialog_closing_app">Завершить работу</string>
+
+    <string name="dialog_delete_action">Удалить данный IP [%s] из чёрного списка?</string>
+    <string name="dialog_delete_title">Удаление записи</string>
+
+    <string name="item_no_locks">Нет блокировок</string>
+    <string name="item_selected_ip_deleted">"%s" был снят с блокировки!</string>
+
+    <string name="activity_blocks_menu_del">Удалить</string>
+
+    Настроичные параметры сервера
+    <string name="setts_login">edit_login</string>
+    <string name="setts_pass">edit_pass</string>
+    <string name="setts_duration">edit_block_duration</string>
+    <string name="setts_wrong_attempts">edit_auth_attempts</string>
+    <string name="setts_encrypt">enable_encrypt</string>
+    <string name="setts_listen_port">edit_listen_port</string>
+    <string name="setts_max_sms">edit_max_sms</string>
+    <string name="setts_sms_test">enable_sms_test</string>
+
+
+    <string name="warn_emty_login">Имя пользователя не может быть пустым!</string>
+    <string name="warn_emty_pass">Пароль не должен быть пустым!</string>
+    <string name="warn_emty_duration">Время блокировки не должен быть пустым!</string>
+    <string name="warn_zero_duration">Время блокировки не может быть равно нулю!</string>
+
+    <string name="warn_encrypt_enable">Шифрование включено!</string>
+    <string name="warn_encrypt_disable">Шифрование отключено!</string>
+
+    <string name="warn_empty_attempts">Число неудачных попыток подключения не должно быть пустым!</string>
+    <string name="warn_empty_listen_port">Прослушиваемы порт должен быть установлен явно!</string>
+
+    <string name="warn_emty_max_sms">Число суточной нормы SMS не должно быть пустым!</string>
+    <string name="warn_begger_than_5000">Количество передаваемых сообщений в сутки не может быть больше %s единиц!</string>
+
+    <string name="warn_less_zero_listen_port">Номер порта не может быть меньше либо равен нулю!</string>
+
+    <string name="warn_zero_max_sms">На данной версии неограниченный SMS трафик не доступен!</string>
+    <string name="warn_less_zero_max_sms">Количество SMS в сутки не может быть меньше нуля!</string>
+
+    <string name="warn_sms_day_updated">Наступили новые сутки!</string>
+    <string name="warn_sms_limit">Превышен суточный лимит SMS сообщений!</string>
+
+
+    <string name="control_sms_counter">Число сообщений: %d / %d</string>
+    <string name="local_ip_mask">IP сервера: %s:%s</string>
+
+    <string name="send_mail_wait">Отправляю сообщение, ждите ...</string>
+    <string name="send_mail_body">Отправка сообщения ...</string>
+
+    <string name="email_subject">Программа для SMS сервера</string>
+    <string name="email_body">По ссылкам внизу вы можете скачать как исходники SMS клиента, чтобы
+     использовать его в своих проектах, так и готовые приложения для Windows для отправки SMS.<br/>
+    Исходники SMS клиента на <b>Java</b> и Delphi FMX можно скачать тут: https://github.com/Promiteus/sms_client/tree/master/source_ru <br/>
+    Программы для рассылки SMS:<br/>
+    1. Консольная программа для выполнения в командной строке: <br/>
+        https://drive.google.com/open?id=17N07DrhFFk-WxwZ9Pre0yg06qSD3bgth <br/>
+        https://yadi.sk/d/U_o4qQl8xv0GAA <br/>
+    2. Программа с привычным графическим интерфейсом:<br/>
+        https://drive.google.com/open?id=17NHt6sGPqm_3fZjSkeLGwBHVZ0DIMJtZ <br/>
+        https://yadi.sk/d/4eJxEOzfX5nLeg <br/></string>
+
+    <string name="win_prog">Программа для SMS рассылок</string>
+
+    <string name="wrong_email_format">Неверный формат email адреса!</string>
+    <string name="empty_email_address">Пустой email адрес отправления!</string>
+    <string name="info_source_code">Укажите ваш email для получения ссыкки на скачивание инсталятора программы для Windows, чтобы вы
+    могли отправлять SMS-сообщения через обычный персональный компьютер.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_settings">Настройки</string>
+    <string name="title_activity_blocklist">Черный список</string>
+
+
+</resources>

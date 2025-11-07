@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/security_pref_title"
+        android:key="security_settings_cat">
+
+
+        <EditTextPreference
+            android:defaultValue="user"
+            android:key="@string/setts_login"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:inputType="text"
+            android:summary="@string/edit_pref_login_summ"
+            android:title="@string/edit_pref_login_title"/>
+        <EditTextPreference
+            android:defaultValue="123"
+            android:key="@string/setts_pass"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            android:summary="@string/edit_pref_pass_summ"
+            android:title="@string/edit_pref_pass_title"/>
+        <EditTextPreference
+            android:defaultValue="3"
+            android:key="@string/setts_wrong_attempts"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:inputType="number"
+            android:summary="@string/edit_pref_wrong_cnt_summ"
+            android:title="@string/edit_pref_wrong_cnt_title" />
+        <EditTextPreference
+            android:defaultValue="1"
+            android:key="@string/setts_duration"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:inputType="number"
+            android:summary="@string/edit_pref_blocktime_summ"
+            android:title="@string/edit_pref_blocktime_title" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/setts_encrypt"
+            android:title="@string/checkbox_pref_encrypt_title"
+            android:enabled="false"
+            />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/common_pref_title"
+        android:key="common_settings_cat">
+
+        <EditTextPreference
+            android:defaultValue="11330"
+            android:key="@string/setts_listen_port"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:inputType="number"
+            android:title="@string/edit_pref_listen_port_title"
+            android:summary="@string/edit_pref_listen_port_summ"/>
+        <EditTextPreference
+            android:defaultValue="1000"
+            android:key="@string/setts_max_sms"
+            android:inputType="number"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/edit_pref_num_sms_title"
+            android:summary="@string/edit_pref_num_sms_summ"/>
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/setts_sms_test"
+
+            android:title="@string/checkbox_pref_test_sms_title"
+            android:enabled="true"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

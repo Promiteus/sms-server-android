@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:id="@+id/frame">
+
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/serverLogFrame"
+
+        android:background="@color/black"
+        >
+
+        <ImageView
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:layout_gravity="center"
+            android:background="@mipmap/sms_569"/>
+
+
+        <TextView
+            android:id="@+id/logText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="56dp"
+            android:scrollbars="vertical"
+            android:autoLink="web"
+            android:linksClickable="true"
+            android:textColor="@color/colorLogText"
+            android:text=""/>
+
+
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/smsCounterText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:background="@drawable/roundrect_params"
+
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:text="@string/control_sms_counter" />
+
+    <TextView
+        android:id="@+id/ipLocalText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="Arial"
+
+        android:layout_alignParentBottom="true"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="31dp"
+        android:background="@drawable/roundrect_params"
+        android:text="IP: 0.0.0.0"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
